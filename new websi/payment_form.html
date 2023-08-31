@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+</head>
+<body>
+    <form action="" method="">
+        <h1>Payment form</h1>
+        <p>* fields are required necessary</p>
+        <h2>personal info</h2>
+        <p>Full name: *<input required type="text" name="fname" > </p>
+        <p>Contact number <input type="number" name="c_number" ></p>
+        <fieldset>
+            <legend>Gender *</legend>
+            <p>Male <input type="radio" required name="gender" id="male" >female <input type="radio" required name="gender" id="female" ></p>
+        </fieldset>
+        <p>Address <textarea name="address" id="address" cols="70" rows="5"></textarea></p>
+        <p>Email *<input type="email" name="email" id="email" required></p>
+        <h2>Payment info</h2>
+        <p>Card type *
+            <select name="card_type" id="card_type" required>
+                <option value="">--select the type--</option>
+                <option value="sadapay">Sadapay</option>
+                <option value="nayapay">Nayapay</option>
+                <option value="visa">Visa</option>
+            </select>
+        </p>
+        <p>
+            Card number * <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>Card expiration date <input type="date" name="exp_date" id="exp_date"></p>
+        <p>IBAN <input type="number" name="iban" id="iban" required></p>
+        <p>Password *<input type="password" name="password" id="password" required></p>
+        <input type="submit" value="Pay Now"> <input type="reset" value="reset">
+    </form>
+</body>
+</html>
